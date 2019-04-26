@@ -1,0 +1,43 @@
+---
+layout: null
+style: wood
+---
+{% include header.html %}
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+<div class="column"><a href="{{site.baseurl}}/build-log/">{% responsive_image_block %}
+    path: assets/images/logbook.png
+    alt: "Build logs"
+{% endresponsive_image_block %}</a></div>
+<div class="column">
+
+<a href="{{site.baseurl}}/dioramas/">{% responsive_image_block %}
+    path: assets/images/VT.png
+    alt: "Dioramas VR"
+{% endresponsive_image_block %}
+</a></div>
+
+<div class="column"><a href="{{site.baseurl}}/notebook/">{% responsive_image_block %}
+    path: assets/images/notebook.png
+    alt: "NoteBook"
+{% endresponsive_image_block %}</a></div>
+
+{% include footer.html %}

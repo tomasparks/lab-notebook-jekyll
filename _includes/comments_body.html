@@ -1,0 +1,24 @@
+ <div class="column middle" style="background-color:#bbb;">
+      <section class="paper">
+      	<article class="head"></article>
+      	        <article>
+                    <div class="e-content">	<ul id="response-list">
+		<li class="comment"><time class="dt-published" datetime="2013-06-13 12:00:00">13<sup>th</sup> June 2013</time> <a class="p-author h-card" href="http://example.com">Fname Lname</a> said: <div>This is a normal comment.</div></li>
+		<li class="arrow_comment" data-fragmention="##Lorem+ipsum+dolor+sit+amet"><time class="dt-published" datetime="2013-06-13 12:00:00">13<sup>th</sup> June 2013</time> <a class="p-author h-card" href="http://example.com">Fname Lname</a> said: <div>This is a marginalia-comment.</div></li>
+		
+{% assign comments = site.data.comments.[page.slug] %}
+{% for comment in comments %}
+  {% assign avatar = comment[1].avatar %}
+  {% assign fragment = comment[1].fragment %} 
+  {% assign email = comment[1].email %}
+  {% assign name = comment[1].name %}
+  {% assign url = comment[1].url %}
+  {% assign date = comment[1].date %}
+  {% assign message = comment[1].message %}
+  {% include comment.html index=forloop.index avatar=avatar fragment=fragment email=email name=name url=url date=date message=message %}
+{% endfor %}
+
+	</ul></div>
+                </article>
+      </section>
+  </div>

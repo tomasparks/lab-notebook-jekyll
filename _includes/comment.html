@@ -1,0 +1,11 @@
+{% if fragment != "" %}
+<li data-fragmention="{{fragment}}" class="arrow_comment">
+<time class="dt-published" datetime="{{date}}">{{date}}</time> <a class="p-author h-card" href="{{url}}">{{name}}</a> said:
+  <div>{{message | markdownify }}</div>
+</li>
+{% else %}
+<li class="comment">
+<time class="dt-published" datetime="{{date}}">{{date}}</time> <a class="p-author h-card" href="{{url}}">{{name}}</a> said:
+  <div>{{message | markdownify }}</div>
+</li>
+{% endif %}

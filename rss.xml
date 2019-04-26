@@ -1,0 +1,84 @@
+---
+layout: null
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:slash="http://purl.org/rss/1.0/modules/slash/" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:rawvoice="http://www.rawvoice.com/rawvoiceRssModule/" xmlns:googleplay="http://www.google.com/schemas/play-podcasts/1.0" xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0" version="2.0">
+<channel>
+	<title>{{site.title}}</title>
+	<link>{{site.url}}{{site.baseurl}}/</link>
+	<description></description>
+	<lastBuildDate>{{site.date | date_to_rfc822}}</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+		<generator>jekyll</generator>
+	<itunes:new-feed-url>{{site.url}}{{site.baseurl}}/rss.xml</itunes:new-feed-url>
+	<itunes:summary><![CDATA[]]></itunes:summary>
+	<itunes:author>{{site.author}}</itunes:author>
+	<itunes:explicit>clean</itunes:explicit>
+	<itunes:image href="" />
+	<itunes:type>episodic</itunes:type>
+	<itunes:owner>
+		<itunes:name>{{site.author}}</itunes:name>
+		<itunes:email>{{site.email}}</itunes:email>
+	</itunes:owner>
+	<managingEditor>{{site.email}} ({{site.author}})</managingEditor>
+	<copyright></copyright>
+	<itunes:subtitle></itunes:subtitle>
+	<image>
+		<title>{{site.title}}</title>
+		<url></url>
+		<link>{{site.url}}{{site.baseurl}}/</link>
+	</image>
+	<itunes:category text="Technology">
+		<itunes:category text="Podcasting" />
+	</itunes:category>
+	<itunes:category text="Business">
+		<itunes:category text="Management &amp; Marketing" />
+	</itunes:category>
+	<itunes:category text="Technology">
+		<itunes:category text="Software How-To" />
+	</itunes:category>
+	<rawvoice:rating>TV-G</rawvoice:rating>
+	<rawvoice:location></rawvoice:location>
+	<rawvoice:frequency>Weekly</rawvoice:frequency>
+	<rawvoice:subscribe feed="{{site.url}}{{site.baseurl}}/rss.xml" />
+	<atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="self" type="application/rss+xml" href="{{site.url}}{{site.baseurl}}/rss.xml" />
+	<feedburner:info uri="theaudacitytopodcast-mp3" />
+	<atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="hub" href="http://pubsubhubbub.appspot.com/" />
+
+ 
+ 
+{% for collection in site.collections %}
+    {% for item in site[collection.label] %}
+    <item>
+		<title>{{ item.title }}</title>
+		<link>{{site.url}}{{site.baseurl}}{{ item.url }}</link>
+		<pubDate>{{ item.date | date_to_rfc822 }}</pubDate>
+		<guid isPermaLink="false">{{site.url}}{{site.baseurl}}{{ item.url }}</guid>
+		<description>{{item.excerpt}}</description>
+		<content:encoded><![CDATA[{{item.content}}]]></content:encoded>
+   <enclosure url="{}-480p.mp4" length="{}" type="video/mp4">
+   <enclosure url="{}-576p.mp4" length="{}" type="video/mp4">
+   <enclosure url="{}-720p.mp4" length="{}" type="video/mp4">
+   <enclosure url="{}-1800p.mp4" length="{}" type="video/mp4">
+   <enclosure url="{}-480p.mp4?torrent" length="{}" type="application/x-bittorrent">
+   <enclosure url="{}-576p.mp4?torrent" length="{}" type="application/x-bittorrent">
+   <enclosure url="{}-720p.mp4?torrent" length="{}" type="application/x-bittorrent">
+   <enclosure url="{}-1800p.mp4?torrent" length="{}" type="application/x-bittorrent">
+   		<itunes:subtitle>{{item.excerpt}}</itunes:subtitle>
+		<itunes:summary><![CDATA[{{item.excerpt}}]]></itunes:summary>
+		<itunes:author>{{site.author}}</itunes:author>
+		<itunes:image href="" />
+		<itunes:episode></itunes:episode>
+		<itunes:title>{{ item.title }}</itunes:title>
+		<itunes:explicit>clean</itunes:explicit>
+		<itunes:duration></itunes:duration>
+		<feedburner:origLink>{{site.url}}{{site.baseurl}}{{ item.url }}</feedburner:origLink>
+		</item>
+
+
+{% endfor %}
+{% endfor %}
+</channel>
+</rss>

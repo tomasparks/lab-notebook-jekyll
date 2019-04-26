@@ -1,0 +1,39 @@
+---
+title: feeds
+layout: null
+style: wood
+---
+{% include header.html %}
+
+<article class="h-feed">
+<h1 class="p-name"><a class="u-url" href="{{site.url}}{{site.baseurl}}/feeds.html">{{page.title}}</a> by <div class="p-author">{{site.author}}</div></h1>
+
+{% for collection in site.collections %}
+{% for item in site[collection.label] %}
+<div class="h-entry">
+<h1 class="p-name"><a class="u-url" href="{{site.url}}{{site.baseurl}}{{ item.url }}">{{item.title}}</a></h1>
+<div class="p-summary">{{item.excerpt}}</div>
+
+<div>
+
+<div class="p-category">{{collection.label}}</div>
+
+{% for cats in item.categories %}
+<div class="p-category">{{cats}}</div>
+{% endfor %}
+
+{% for tags in item.tags %}
+<div class="p-category">{{tags}}</div>
+{% endfor %}
+
+</div>
+
+<div class="p-author">{{site.author}}</div>
+<div class="dt-published ">{{ item.date | date_to_rfc822 }}</div>
+</div>
+{% endfor %}
+{% endfor %}
+</article>
+
+{% include footer.html %}
+

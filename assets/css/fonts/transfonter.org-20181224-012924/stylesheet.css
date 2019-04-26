@@ -1,0 +1,429 @@
+@font-face {
+    font-family: 'futuraLightAngled';
+    src: url('futuraLightAngled.eot');
+    src: url('futuraLightAngled.eot?#iefix') format('embedded-opentype'),
+        url('futuraLightAngled.woff2') format('woff2'),
+        url('futuraLightAngled.woff') format('woff'),
+        url('futuraLightAngled.svg#futuraLightAngled') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OpenWeb Icons';
+    src: url('font3933.eot');
+    src: url('font3933.eot?#iefix') format('embedded-opentype'),
+        url('font3933.woff2') format('woff2'),
+        url('font3933.woff') format('woff'),
+        url('font3933.svg#font3933') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Hershey-Noailles-futuram-affiche';
+    src: url('Hershey-Noailles-futuram-affiche.eot');
+    src: url('Hershey-Noailles-futuram-affiche.eot?#iefix') format('embedded-opentype'),
+        url('Hershey-Noailles-futuram-affiche.woff2') format('woff2'),
+        url('Hershey-Noailles-futuram-affiche.woff') format('woff'),
+        url('Hershey-Noailles-futuram-affiche.svg#Hershey-Noailles-futuram-affiche') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Hershey-Noailles-timesb';
+    src: url('Hershey-Noailles-timesb.eot');
+    src: url('Hershey-Noailles-timesb.eot?#iefix') format('embedded-opentype'),
+        url('Hershey-Noailles-timesb.woff2') format('woff2'),
+        url('Hershey-Noailles-timesb.woff') format('woff'),
+        url('Hershey-Noailles-timesb.svg#Hershey-Noailles-timesb') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Hershey-Noailles-timesr';
+    src: url('Hershey-Noailles-timesr.eot');
+    src: url('Hershey-Noailles-timesr.eot?#iefix') format('embedded-opentype'),
+        url('Hershey-Noailles-timesr.woff2') format('woff2'),
+        url('Hershey-Noailles-timesr.woff') format('woff'),
+        url('Hershey-Noailles-timesr.svg#Hershey-Noailles-timesr') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Armata';
+    src: url('Armata-Regular.eot');
+    src: url('Armata-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Armata-Regular.woff2') format('woff2'),
+        url('Armata-Regular.woff') format('woff'),
+        url('Armata-Regular.svg#Armata-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TELETYPE 1945-1985';
+    src: url('TELETYPE1945-1985.eot');
+    src: url('TELETYPE1945-1985.eot?#iefix') format('embedded-opentype'),
+        url('TELETYPE1945-1985.woff2') format('woff2'),
+        url('TELETYPE1945-1985.woff') format('woff'),
+        url('TELETYPE1945-1985.svg#TELETYPE1945-1985') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Armata';
+    src: url('Armata-Regular.eot');
+    src: url('Armata-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Armata-Regular.woff2') format('woff2'),
+        url('Armata-Regular.woff') format('woff'),
+        url('Armata-Regular.svg#Armata-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Hershey-Noailles-timesr';
+    src: url('Hershey-Noailles-timesr.eot');
+    src: url('Hershey-Noailles-timesr.eot?#iefix') format('embedded-opentype'),
+        url('Hershey-Noailles-timesr.woff2') format('woff2'),
+        url('Hershey-Noailles-timesr.woff') format('woff'),
+        url('Hershey-Noailles-timesr.svg#Hershey-Noailles-timesr') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Dot Matrix';
+    src: url('DotMatrix.eot');
+    src: url('DotMatrix.eot?#iefix') format('embedded-opentype'),
+        url('DotMatrix.woff2') format('woff2'),
+        url('DotMatrix.woff') format('woff'),
+        url('DotMatrix.svg#DotMatrix') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Hershey-Noailles-futuram';
+    src: url('Hershey-Noailles-futuram.eot');
+    src: url('Hershey-Noailles-futuram.eot?#iefix') format('embedded-opentype'),
+        url('Hershey-Noailles-futuram.woff2') format('woff2'),
+        url('Hershey-Noailles-futuram.woff') format('woff'),
+        url('Hershey-Noailles-futuram.svg#Hershey-Noailles-futuram') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Hershey-Noailles-cursive';
+    src: url('Hershey-Noailles-cursive.eot');
+    src: url('Hershey-Noailles-cursive.eot?#iefix') format('embedded-opentype'),
+        url('Hershey-Noailles-cursive.woff2') format('woff2'),
+        url('Hershey-Noailles-cursive.woff') format('woff'),
+        url('Hershey-Noailles-cursive.svg#Hershey-Noailles-cursive') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AVHershey Duplex';
+    src: url('AVHersheyDuplexLight.eot');
+    src: url('AVHersheyDuplexLight.eot?#iefix') format('embedded-opentype'),
+        url('AVHersheyDuplexLight.woff2') format('woff2'),
+        url('AVHersheyDuplexLight.woff') format('woff'),
+        url('AVHersheyDuplexLight.svg#AVHersheyDuplexLight') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AVHershey Duplex';
+    src: url('AVHersheyDuplexHeavy.eot');
+    src: url('AVHersheyDuplexHeavy.eot?#iefix') format('embedded-opentype'),
+        url('AVHersheyDuplexHeavy.woff2') format('woff2'),
+        url('AVHersheyDuplexHeavy.woff') format('woff'),
+        url('AVHersheyDuplexHeavy.svg#AVHersheyDuplexHeavy') format('svg');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AVHershey Complex';
+    src: url('AVHersheyComplexHeavy.eot');
+    src: url('AVHersheyComplexHeavy.eot?#iefix') format('embedded-opentype'),
+        url('AVHersheyComplexHeavy.woff2') format('woff2'),
+        url('AVHersheyComplexHeavy.woff') format('woff'),
+        url('AVHersheyComplexHeavy.svg#AVHersheyComplexHeavy') format('svg');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Hershey-Noailles';
+    src: url('gothic-medor.eot');
+    src: url('gothic-medor.eot?#iefix') format('embedded-opentype'),
+        url('gothic-medor.woff2') format('woff2'),
+        url('gothic-medor.woff') format('woff'),
+        url('gothic-medor.svg#gothic-medor') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Hershey-Noailles-futuram-affiche';
+    src: url('Hershey-Noailles-futuram-affiche.eot');
+    src: url('Hershey-Noailles-futuram-affiche.eot?#iefix') format('embedded-opentype'),
+        url('Hershey-Noailles-futuram-affiche.woff2') format('woff2'),
+        url('Hershey-Noailles-futuram-affiche.woff') format('woff'),
+        url('Hershey-Noailles-futuram-affiche.svg#Hershey-Noailles-futuram-affiche') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'herscheyfutura';
+    src: url('herscheyfutura.eot');
+    src: url('herscheyfutura.eot?#iefix') format('embedded-opentype'),
+        url('herscheyfutura.woff2') format('woff2'),
+        url('herscheyfutura.woff') format('woff'),
+        url('herscheyfutura.svg#herscheyfutura') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AVHershey Duplex';
+    src: url('AVHersheyDuplexMedium.eot');
+    src: url('AVHersheyDuplexMedium.eot?#iefix') format('embedded-opentype'),
+        url('AVHersheyDuplexMedium.woff2') format('woff2'),
+        url('AVHersheyDuplexMedium.woff') format('woff'),
+        url('AVHersheyDuplexMedium.svg#AVHersheyDuplexMedium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Hershey-Noailles';
+    src: url('timesr-medor.eot');
+    src: url('timesr-medor.eot?#iefix') format('embedded-opentype'),
+        url('timesr-medor.woff2') format('woff2'),
+        url('timesr-medor.woff') format('woff'),
+        url('timesr-medor.svg#timesr-medor') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AVHershey Complex';
+    src: url('AVHersheyComplexMedium.eot');
+    src: url('AVHersheyComplexMedium.eot?#iefix') format('embedded-opentype'),
+        url('AVHersheyComplexMedium.woff2') format('woff2'),
+        url('AVHersheyComplexMedium.woff') format('woff'),
+        url('AVHersheyComplexMedium.svg#AVHersheyComplexMedium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'herscheyscript';
+    src: url('herscheyscript.eot');
+    src: url('herscheyscript.eot?#iefix') format('embedded-opentype'),
+        url('herscheyscript.woff2') format('woff2'),
+        url('herscheyscript.woff') format('woff'),
+        url('herscheyscript.svg#herscheyscript') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TELETYPE 1945-1985';
+    src: url('TELETYPE1945-1985.eot');
+    src: url('TELETYPE1945-1985.eot?#iefix') format('embedded-opentype'),
+        url('TELETYPE1945-1985.woff2') format('woff2'),
+        url('TELETYPE1945-1985.woff') format('woff'),
+        url('TELETYPE1945-1985.svg#TELETYPE1945-1985') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'openweb_iconsregular';
+    src: url('openweb_iconsregular.eot');
+    src: url('openweb_iconsregular.eot?#iefix') format('embedded-opentype'),
+        url('openweb_iconsregular.woff2') format('woff2'),
+        url('openweb_iconsregular.woff') format('woff'),
+        url('openweb_iconsregular.svg#openweb_iconsregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Armata';
+    src: url('Armata-Regular.eot');
+    src: url('Armata-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Armata-Regular.woff2') format('woff2'),
+        url('Armata-Regular.woff') format('woff'),
+        url('Armata-Regular.svg#Armata-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Hershey-Noailles-futuram-affiche';
+    src: url('Hershey-Noailles-futuram-affiche.eot');
+    src: url('Hershey-Noailles-futuram-affiche.eot?#iefix') format('embedded-opentype'),
+        url('Hershey-Noailles-futuram-affiche.woff2') format('woff2'),
+        url('Hershey-Noailles-futuram-affiche.woff') format('woff'),
+        url('Hershey-Noailles-futuram-affiche.svg#Hershey-Noailles-futuram-affiche') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TELETYPE 1945-1985';
+    src: url('TELETYPE1945-1985.eot');
+    src: url('TELETYPE1945-1985.eot?#iefix') format('embedded-opentype'),
+        url('TELETYPE1945-1985.woff2') format('woff2'),
+        url('TELETYPE1945-1985.woff') format('woff'),
+        url('TELETYPE1945-1985.svg#TELETYPE1945-1985') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Hershey-Noailles-futuram';
+    src: url('Hershey-Noailles-futuram.eot');
+    src: url('Hershey-Noailles-futuram.eot?#iefix') format('embedded-opentype'),
+        url('Hershey-Noailles-futuram.woff2') format('woff2'),
+        url('Hershey-Noailles-futuram.woff') format('woff'),
+        url('Hershey-Noailles-futuram.svg#Hershey-Noailles-futuram') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Dot Matrix';
+    src: url('DotMatrix.eot');
+    src: url('DotMatrix.eot?#iefix') format('embedded-opentype'),
+        url('DotMatrix.woff2') format('woff2'),
+        url('DotMatrix.woff') format('woff'),
+        url('DotMatrix.svg#DotMatrix') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Hershey-Noailles-timesb';
+    src: url('Hershey-Noailles-timesb.eot');
+    src: url('Hershey-Noailles-timesb.eot?#iefix') format('embedded-opentype'),
+        url('Hershey-Noailles-timesb.woff2') format('woff2'),
+        url('Hershey-Noailles-timesb.woff') format('woff'),
+        url('Hershey-Noailles-timesb.svg#Hershey-Noailles-timesb') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OpenWeb Icons';
+    src: url('font3933.eot');
+    src: url('font3933.eot?#iefix') format('embedded-opentype'),
+        url('font3933.woff2') format('woff2'),
+        url('font3933.woff') format('woff'),
+        url('font3933.svg#font3933') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Hershey-Noailles-timesr';
+    src: url('Hershey-Noailles-timesr.eot');
+    src: url('Hershey-Noailles-timesr.eot?#iefix') format('embedded-opentype'),
+        url('Hershey-Noailles-timesr.woff2') format('woff2'),
+        url('Hershey-Noailles-timesr.woff') format('woff'),
+        url('Hershey-Noailles-timesr.svg#Hershey-Noailles-timesr') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Armata';
+    src: url('Armata-Regular.eot');
+    src: url('Armata-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Armata-Regular.woff2') format('woff2'),
+        url('Armata-Regular.woff') format('woff'),
+        url('Armata-Regular.svg#Armata-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Hershey-Noailles-timesb';
+    src: url('Hershey-Noailles-timesb.eot');
+    src: url('Hershey-Noailles-timesb.eot?#iefix') format('embedded-opentype'),
+        url('Hershey-Noailles-timesb.woff2') format('woff2'),
+        url('Hershey-Noailles-timesb.woff') format('woff'),
+        url('Hershey-Noailles-timesb.svg#Hershey-Noailles-timesb') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Hershey-Noailles-timesr';
+    src: url('Hershey-Noailles-timesr.eot');
+    src: url('Hershey-Noailles-timesr.eot?#iefix') format('embedded-opentype'),
+        url('Hershey-Noailles-timesr.woff2') format('woff2'),
+        url('Hershey-Noailles-timesr.woff') format('woff'),
+        url('Hershey-Noailles-timesr.svg#Hershey-Noailles-timesr') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Hershey-Noailles-futuram';
+    src: url('Hershey-Noailles-futuram.eot');
+    src: url('Hershey-Noailles-futuram.eot?#iefix') format('embedded-opentype'),
+        url('Hershey-Noailles-futuram.woff2') format('woff2'),
+        url('Hershey-Noailles-futuram.woff') format('woff'),
+        url('Hershey-Noailles-futuram.svg#Hershey-Noailles-futuram') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TELETYPE 1945-1985';
+    src: url('TELETYPE1945-1985.eot');
+    src: url('TELETYPE1945-1985.eot?#iefix') format('embedded-opentype'),
+        url('TELETYPE1945-1985.woff2') format('woff2'),
+        url('TELETYPE1945-1985.woff') format('woff'),
+        url('TELETYPE1945-1985.svg#TELETYPE1945-1985') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OpenWeb Icons';
+    src: url('font3933.eot');
+    src: url('font3933.eot?#iefix') format('embedded-opentype'),
+        url('font3933.woff2') format('woff2'),
+        url('font3933.woff') format('woff'),
+        url('font3933.svg#font3933') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Hershey-Noailles-futuram-affiche';
+    src: url('Hershey-Noailles-futuram-affiche.eot');
+    src: url('Hershey-Noailles-futuram-affiche.eot?#iefix') format('embedded-opentype'),
+        url('Hershey-Noailles-futuram-affiche.woff2') format('woff2'),
+        url('Hershey-Noailles-futuram-affiche.woff') format('woff'),
+        url('Hershey-Noailles-futuram-affiche.svg#Hershey-Noailles-futuram-affiche') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+

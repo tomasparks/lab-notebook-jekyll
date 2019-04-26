@@ -1,0 +1,24 @@
+<!-- Main -->
+  <div class="column left" style="background-color:#aaa;">
+      <section class="paper">
+      	<article class="head"></article>
+      	        <article><h2 class="p-name">{{page.title}}</h2>
+                    <div class="e-content">
+                            {{ content }}
+
+<pre>
+> SELECT * FROM "MetaData" WHERE post_slug = "{{post.slug}}"
+
+Author: <a class="p-author h-card" href="http://example.com">W. Developer</a>
+DateTime: <time class="dt-published" datetime="{ page.date | date_to_xmlschema }}">{{ page.date | date: "%Y-%m-%d" }}</time></p>
+
+OK
+>
+</pre>
+
+
+    </div>
+                </article>
+      </section>
+  </div>
+<!--  end of main -->
