@@ -17,15 +17,8 @@ responsive_image:
   extra_images:
      - assets/images/*.*
 
-permalink: 'notebook/:year/:month/:slug.html'
+permalink: '/:year/:month/:slug.html'
 
-
-
-collections:
-  build-log:
-    output: true
-    permalink: /:collection/:categories/:year/:month/:day/:slug:output_ext
-    style: devlog
     
 defaults:
   # all posts
@@ -83,7 +76,7 @@ autopages:
     layouts: 
       - 'autopage_cat.html'
     title: 'Posts in category :cat'
-    permalink: '/notebook/category/:cat/:num/'
+    permalink: '/category/:cat/:num/'
 
   # Collection pages, omit to disable
   collections:
@@ -99,4 +92,4 @@ autopages:
     layouts: 
       - 'autopage_tags.html'
     title: 'Posts tagged with :tag' # :tag is replaced by the tag name
-    permalink: '/notebook/tags/:tag/:num/'
+    permalink: '/tags/:tag/:num/'
