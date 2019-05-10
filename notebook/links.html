@@ -4,3 +4,31 @@ layout: page
 style: notebook
 permalink: notebook/links.html
 ---
+
+<div id="tabs">
+	<ul>
+        <li><a href="#videos"><i class="fa fa-video-camera" aria-hidden="true"></i> Videos (F8)</a></li>
+        <li><a href="#websites">Websites (F9)</a></li>
+	</ul>
+
+<section id="websites">
+    <ol>
+        {% for item in site.data.links.websites %}
+        <li>
+            <a href="{{ item.url }}">{{ item.title }}</a> - {{item.description}}
+        </li>
+        {% endfor %}
+    </ol>
+</section>
+
+<section id="videos">
+    <ol>
+        {% for item in site.data.links.videos %}
+        <li>
+           <a href="{{ item.url }}">{{ item.title }}</a> - {{item.description}}
+        </li>
+        {% endfor %}
+    </ol>
+</section>
+
+</div>
