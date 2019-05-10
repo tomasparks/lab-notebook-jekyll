@@ -1,8 +1,7 @@
 # Jekyll source / destination
 source:               .
-destination:          ./_site/miniatures
-url: https://tomasparks.name
-baseurl: /miniatures
+destination:          ./_site/
+baseurl: /
 
 
 plugins:
@@ -21,30 +20,6 @@ amazon_cache_dir:     '.amazon-cache'      # default '.amazon-cache'
  
 responsive_image:
   template: _includes/srcset-resized-fallback.html
-    # [Optional, Default: 85]
-  # Quality to use when resizing images.
-  default_quality: 90
-
-  # [Optional, Default: []]
-  # An array of resize configuration objects. Each object must contain at least
-  # a `width` value.
-  sizes:
-    - width: 160  # [Required] How wide the resized image will be.
-  #    quality: 80 # [Optional] Overrides default_quality for this size.
-    - width: 320
-    - width: 640
-    - width: 720
-    - width: 800
-    - width: 1024
-    - width: 1080
-    - width: 1920
-    - width: 1440
-    - width: 2160
-    - width: 2880
-    - width: 4320
-    - width: 8640
-
-
   base_path: /\assets/images/
   output_path_format: assets/images/resized/%{width}/%{basename}
   save_to_source: true
@@ -148,27 +123,3 @@ autopages:
       - 'autopage_tags.html'
     title: 'Posts tagged with :tag' # :tag is replaced by the tag name
     permalink: '/notebook/tags/:tag/:num/'
-  
-
-## SEO.YML
-# Jekyll SEO tag
-# https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
-title: Tom Sparks's miniatures section
-name: Tom Sparks's miniatures section
-image: /about-me/photo.png
-description:
-author: Tom Sparks
-bio: I am a Alternative Technology Researcher, with a focus on Digital Communication Networks.
-categories:
-  - fidonet
-  - fsxnet
-  - indieweb
-  - archivist
-  - kopimi
-  - aspie
-social:
-  name: Tom Sparks
-  links:
-    - https://github.com/tomasparks
-    - https://www.facebook.com/tom.sparks.106
-## EOF SEO.YML
