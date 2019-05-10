@@ -8,16 +8,7 @@ plugins:
  - 'jekyll-seo-tag' # setting in seo.yml
  - 'jekyll/responsive_image'
  - jekyll-paginate-v2
- 
-# Amazon plugin
-amazon_access_key_id: 'your access key id'
-amazon_secret_key:    'your secret key'
-amazon_associate_tag: 'your associate'
-amazon_cache:         true # or true
-amazon_cache_dir:     '.amazon-cache'      # default '.amazon-cache'
-#amazon_country:       'jp'                 # default 'us'
-#amazon_locale:        'ja'                 # default 'en'
- 
+  
 responsive_image:
   template: _includes/srcset-resized-fallback.html
   base_path: /\assets/images/
