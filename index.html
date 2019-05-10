@@ -1,43 +1,18 @@
 ---
-layout: null
-style: wood
+layout: page
+title: Contents / Index
+permalink: notebook/index.html
+style: notebook
 ---
-{% include header.html %}
-<style>
-* {
-  box-sizing: border-box;
-}
+<pre>
+> SELECT "Categories","title","dateTime","comments" FROM "MetaData" GROUPBY "Categories"
 
-/* Create three equal columns that floats next to each other */
-.column {
-  float: left;
-  width: 33.33%;
-  padding: 10px;
-  height: 300px; /* Should be removed. Only for demonstration */
-}
+<ul>{% for category in site.categories %}<li>{{ category[0] }}
+<ul>{% for post in category[1] %}
+<li><a href="{{site.baseurl}}{{ post.url }}">{{ post.title }}</a> <time class="dt-published" datetime="{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y-%m-%d" }}</time> () </li>
+{% endfor %}</ul></li>
+{% endfor %}</ul>
 
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-</style>
-<div class="column"><a href="{{site.baseurl}}/build-log/">{% responsive_image_block %}
-    path: assets/images/logbook.png
-    alt: "Build logs"
-{% endresponsive_image_block %}</a></div>
-<div class="column">
-
-<a href="{{site.baseurl}}/dioramas/">{% responsive_image_block %}
-    path: assets/images/VT.png
-    alt: "Dioramas VR"
-{% endresponsive_image_block %}
-</a></div>
-
-<div class="column"><a href="{{site.baseurl}}/notebook/">{% responsive_image_block %}
-    path: assets/images/notebook.png
-    alt: "NoteBook"
-{% endresponsive_image_block %}</a></div>
-
-{% include footer.html %}
+OK
+>
+</pre>
