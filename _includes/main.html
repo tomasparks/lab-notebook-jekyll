@@ -5,19 +5,19 @@
       	        <article class="h-entry"><h2 class="p-name">{{page.title}}</h2>
                     <div class="e-content">
                             {{ content }}
+                    </div>
 
 <pre>
 > SELECT * FROM "MetaData" WHERE post_slug = "{{page.id}}"
 
 Author: <a class="p-author h-card" href="https://{{site.gobal.rooturl}}/">{{site.author}}</a>
-DateTime: <time class="dt-published" datetime="{ page.date | date_to_xmlschema }}">{{ page.date | date: "%Y-%m-%d" }}</time></p>
+DateTime: <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%Y-%m-%d" }}</time></p>
 
 OK
 >
 </pre>
 
 
-    </div>
                 </article>
       </section>
   </div>
