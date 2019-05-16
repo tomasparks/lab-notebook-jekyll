@@ -14,6 +14,7 @@ Author: <a class="p-author h-card" href="https://{{site.gobal.rooturl}}/">{{site
 DateTime: <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%Y-%m-%d" }}</time></p>
 {% capture sitename %}{{site.sitename}}{% endcapture %}
 {% assign syndication = site.data.syndication.[sitename] %}
+<!-- {{syndication|jsonify}} -->
 {% capture posturl %}{{ post.url | remove: '.html' }}{% endcapture %}
 {% assign thisUrl =  posturl %}
 
@@ -24,7 +25,8 @@ DateTime: <time class="dt-published" datetime="{{ page.date | date_to_xmlschema 
 {% if thisUrl == s.source %}{% assign synd_array= synd_array | push: target %}{% endif %}
 {% endfor %}
 <div>
-syndication: {% for syn in  synd_array %}<a class="u-syndication" href="{{synd}}">{{synd}}</a>{% if forloop.last == true %}{% else %},{% endif %}{% endfor %}]}
+<!-- {{synd_array|jsonify}} -->
+syndication: {% for syn in  synd_array %}<a class="u-syndication" href="{{synd}}">{{synd}}</a>{% if forloop.last == true %}{% else %},{% endif %}{% endfor %}
 </div>
 
 OK
