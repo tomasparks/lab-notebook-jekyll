@@ -6,12 +6,7 @@
                     <div class="e-content">
                             {{ content }}
                     </div>
-
-<pre>
-> SELECT * FROM "MetaData" WHERE post_slug = "{{page.id}}"
-
-Author: <a class="p-author h-card" href="https://{{site.gobal.rooturl}}/">{{site.author}}</a>
-DateTime: <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%Y-%m-%d" }}</time></p>
+                    
 {% capture sitename %}{{site.sitename}}{% endcapture %}
 {% assign syndication = site.data.syndication.[sitename] %}
 <!-- {{syndication|jsonify}} -->
@@ -25,10 +20,15 @@ DateTime: <time class="dt-published" datetime="{{ page.date | date_to_xmlschema 
 {% capture target %}{{ s.target }}{% endcapture %}
 {% if thisUrl == s.source %}{% assign synd_array= synd_array | push: target %}{% endif %}
 {% endfor %}
-<div>
+<pre>
+> SELECT * FROM "MetaData" WHERE post_slug = "{{page.id}}"
+
+Author: <a class="p-author h-card" href="https://{{site.gobal.rooturl}}/">{{site.author}}</a>
+DateTime: <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%Y-%m-%d" }}</time></p>
+<p>
 <!-- {{synd_array|jsonify}} -->
-syndication: {% for syn in  synd_array %}<a class="u-syndication" href="{{synd}}">{{synd}}</a>{% if forloop.last == true %}{% else %},{% endif %}{% endfor %}
-</div>
+syndication: {% for syn in  synd_array %}<a class="u-syndication" href="{{syn}}">{{syn}}</a>{% if forloop.last == true %}{% else %},{% endif %}{% endfor %}
+</p>
 
 OK
 >
