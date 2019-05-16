@@ -15,8 +15,9 @@ DateTime: <time class="dt-published" datetime="{{ page.date | date_to_xmlschema 
 {% capture sitename %}{{site.sitename}}{% endcapture %}
 {% assign syndication = site.data.syndication.[sitename] %}
 <!-- {{syndication|jsonify}} -->
-{% capture posturl %}{{ post.url | remove: '.html' }}{% endcapture %}
+{% capture posturl %}{{ page.id | remove: '.html' }}{% endcapture %}
 {% assign thisUrl =  posturl %}
+<!-- {{posturl}} -->
 
 {% assign synd_array = "" %}
 {% assign synd_array = "" | split: ',' %}
