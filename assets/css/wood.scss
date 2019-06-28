@@ -102,6 +102,7 @@ $dot-font: 'DOTMATRI';
 body {background-image: url("{{site.baseurl}}/assets/images/wood.jpg");
     font-family: $gobal-font;
     font-size:18px;
+        line-height: normal;
  }
  
 .h-feed {
