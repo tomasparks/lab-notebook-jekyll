@@ -88,7 +88,8 @@ div.container {
         url('{{site.baseurl}}/assets/css/fonts/futuraLightAngled.woff2') format('woff2'),
         url('{{site.baseurl}}/assets/css/fonts/futuraLightAngled.woff') format('woff'),
         url('{{site.baseurl}}/assets/css/fonts/futuraLightAngled.svg#futuraLightAngled') format('svg');
-    font-weight: 300;
+    font-weight: normal;
+    line-height: normal;
     font-style: normal;
 }
 
