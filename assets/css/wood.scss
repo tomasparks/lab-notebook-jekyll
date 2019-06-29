@@ -102,10 +102,35 @@ $dot-font: 'DOTMATRI';
 body {background-image: url("{{site.baseurl}}/assets/images/wood.jpg");
     font-family: $gobal-font;
     font-size:18px;
-        line-height: normal;
- }
- 
-.h-feed {
+    line-height: normal;
+    .h-entry {
+    margin: 10px;
+    background-color: #fff;
+    border: 1px solid black;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px; 
+    width: auto;
+    padding: 10px;
+    .p-name {text-align: center;}
+    } 
+
+
+.footer {background-color: white;
+        border: 1px solid black;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+        text-align: center;
+        left: 0;
+        bottom: 0;
+        width: auto;
+        margin-left: auto;
+        margin-right: auto;
+        right: 0px;
+        position: absolute;
+        }
+    .h-feed {
     .p-name {
         margin: 10px;
         background-color: #fff;
@@ -134,33 +159,10 @@ body {background-image: url("{{site.baseurl}}/assets/images/wood.jpg");
     }
 }
 
+ }
+ 
 
-.h-entry {
-    margin: 10px;
-    background-color: #fff;
-    border: 1px solid black;
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
-    border-bottom-left-radius: 25px;
-    border-bottom-right-radius: 25px; 
-    width: auto;
-    padding: 10px;
-} 
-.p-name {
-        text-align: center;
-}
 
-.footer {background-color: white;
-        border: 1px solid black;
-        border-top-left-radius: 25px;
-        border-top-right-radius: 25px;
-        text-align: center;
-        left: 0;
-        bottom: 0;
-        width: auto;
-        margin-left: auto;
-        margin-right: auto;
-        right: 0px;
-        }
+
 
 
